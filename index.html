@@ -919,12 +919,20 @@
     <!-- Scripts -->
     <script>
     // Scroll animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    const fadeEls = document.querySelectorAll('.fade-in');
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        fadeEls.forEach(el => observer.observe(el));
+        // Fallback: reveal all after 3s for crawlers/bots that run JS but don't scroll
+        setTimeout(() => fadeEls.forEach(el => el.classList.add('visible')), 3000);
+    } else {
+        // No IntersectionObserver support: show everything immediately
+        fadeEls.forEach(el => el.classList.add('visible'));
+    }
 
     // FAQ Accordion
     function toggleAccordion(btn) {
