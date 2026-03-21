@@ -17,7 +17,7 @@
     <meta property="og:title" content="TradeAhead -- Stop Losing Jobs to Whoever Replies First">
     <meta property="og:description" content="The done-for-you system that responds to every lead in under 60 seconds, chases every quote, and books jobs automatically.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9889;</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231E3A5F'/><text x='16' y='23' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='18' fill='%23F59E0B'>TA</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -169,7 +169,7 @@
         <div class="relative max-w-4xl mx-auto px-6 lg:px-8 pt-32 pb-24 sm:pt-40 sm:pb-32 text-center">
             <div class="inline-flex items-center gap-2.5 bg-white/[0.08] backdrop-blur-md text-sm font-semibold px-5 py-2.5 rounded-full mb-10 border border-white/[0.12] shadow-lg shadow-black/10">
                 <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
-                <span class="shiny-text">One trade per postcode -- limited availability</span>
+                <span class="shiny-text">Currently serving 3 postcodes in the UK</span>
             </div>
 
             <h1 class="font-heading text-[2.5rem] sm:text-6xl lg:text-[4.25rem] font-extrabold text-white leading-[1.08] tracking-tight">
@@ -452,7 +452,7 @@
                     </div>
                 </div>
                 <a href="#booking" class="mt-6 block w-full btn-primary text-white font-bold font-heading text-center py-4 rounded-xl text-[15px]">
-                    Stop the Leak -- Book Your Free Audit
+                    Book Your Free Revenue Leak Audit
                 </a>
             </div>
         </div>
@@ -490,7 +490,8 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 <!-- Tier 1 -->
-                <div class="bg-white rounded-3xl p-8 sm:p-10 card border border-gray-200 fade-in">
+                <div class="relative bg-white rounded-3xl p-8 sm:p-10 pricing-highlight border border-amber/20 fade-in">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber to-amber-hover text-white text-xs font-bold font-heading uppercase tracking-widest px-5 py-1.5 rounded-full shadow-md">Most Popular</div>
                     <div class="text-center">
                         <span class="inline-block bg-navy-50 text-navy font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6 font-heading">Solo Tradespeople</span>
                         <div class="flex items-baseline justify-center gap-2">
@@ -528,15 +529,14 @@
                     <div class="mt-6 bg-green-50 rounded-xl p-4 text-center border border-green-100">
                         <p class="font-bold text-green-800 text-sm">60-day money-back guarantee</p>
                     </div>
-                    <a href="#booking" class="mt-6 block w-full btn-secondary bg-white text-navy font-bold font-heading text-center py-4 rounded-xl text-[15px] border-2 border-navy hover:bg-navy hover:text-white transition-colors">
+                    <a href="#booking" class="mt-6 block w-full btn-primary text-white font-bold font-heading text-center py-4 rounded-xl text-[15px]">
                         Check Your Area
                     </a>
                     <p class="mt-4 text-center text-xs text-slate">3-month minimum. One trade per postcode.</p>
                 </div>
 
                 <!-- Tier 2 -->
-                <div class="relative bg-white rounded-3xl p-8 sm:p-10 pricing-highlight border border-amber/20 fade-in">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber to-amber-hover text-white text-xs font-bold font-heading uppercase tracking-widest px-5 py-1.5 rounded-full shadow-md">Most Popular</div>
+                <div class="bg-white rounded-3xl p-8 sm:p-10 card border border-gray-200 fade-in">
                     <div class="text-center">
                         <span class="inline-block bg-amber-50 text-amber font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6 font-heading">Growing Businesses</span>
                         <div class="flex items-baseline justify-center gap-2">
@@ -566,7 +566,7 @@
                     <div class="mt-6 bg-green-50 rounded-xl p-4 text-center border border-green-100">
                         <p class="font-bold text-green-800 text-sm">90-day money-back guarantee</p>
                     </div>
-                    <a href="#booking" class="mt-6 block w-full btn-primary text-white font-bold font-heading text-center py-4 rounded-xl text-[15px]">
+                    <a href="#booking" class="mt-6 block w-full btn-secondary bg-white text-navy font-bold font-heading text-center py-4 rounded-xl text-[15px] border-2 border-navy hover:bg-navy hover:text-white transition-colors">
                         Book Your Revenue Leak Audit
                     </a>
                     <p class="mt-4 text-center text-xs text-slate">3-month minimum. One trade per postcode.</p>
@@ -590,13 +590,9 @@
                     <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 </div>
 
-                <blockquote class="text-white/90 text-lg sm:text-xl leading-relaxed mb-6 relative z-10">
-                    "Before TradeAhead, I was losing 3-4 jobs a week just because I couldn't answer the phone on site. Within the first week, the system had already claimed and booked two jobs I would have completely missed. It texts the customer before I've even put my tools down."
+                <blockquote class="text-white/90 text-lg sm:text-xl leading-relaxed mb-8 relative z-10">
+                    I was losing 3 or 4 jobs a week because I couldn't answer the phone on site. Within the first week, TradeAhead had already claimed and booked two jobs I would have completely missed. It texts the customer before I've even put my tools down.
                 </blockquote>
-
-                <p class="text-white/70 text-sm leading-relaxed mb-8 relative z-10">
-                    A Checkatrade-verified plumber in Oxfordshire was losing 3-4 jobs a week because other tradespeople were responding faster. By the time he checked his phone between jobs, the customer had already booked someone else. Now his system claims every lead within 10 seconds, qualifies the customer automatically, and sends him a summary to accept or reject from his phone. He went from missing half his leads to capturing every single one.
-                </p>
 
                 <div class="grid grid-cols-3 gap-4 mb-8 relative z-10">
                     <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center border border-white/10">
@@ -714,6 +710,7 @@
                 <p class="text-sm font-bold text-amber uppercase tracking-widest mb-3">Book Now</p>
                 <h2 class="font-heading text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">Check If Your Postcode<br>Area Is Available</h2>
                 <p class="mt-4 text-slate text-lg">Answer 3 quick questions, grab your free audit.</p>
+                <p class="mt-2 text-sm text-amber font-semibold">Only 1 tradesperson per postcode. 3 of 12 launch slots taken.</p>
             </div>
             <div class="bg-white rounded-3xl p-8 sm:p-10 card border border-gray-100 fade-in" id="quiz-container">
                 <!-- Progress bar -->
@@ -1004,17 +1001,6 @@
                 </a>
             </div>
 
-            <!-- Newsletter signup -->
-            <div class="max-w-lg mx-auto bg-white rounded-2xl p-8 card border border-gray-100 text-center fade-in">
-                <h3 class="font-heading text-lg font-bold text-navy">Get practical tips in your inbox</h3>
-                <p class="text-sm text-slate mt-2">No spam. Just stuff that helps you win more work.</p>
-                <form id="newsletter-form" class="mt-6 flex flex-col sm:flex-row gap-3">
-                    <input type="text" name="name" placeholder="Your name" required class="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20 transition-all">
-                    <input type="email" name="email" placeholder="Your email" required class="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20 transition-all">
-                    <button type="submit" class="btn-primary text-white font-semibold px-6 py-3 rounded-xl text-sm whitespace-nowrap">Subscribe</button>
-                </form>
-                <p id="newsletter-success" class="hidden mt-4 text-sm text-green-600 font-semibold">You're in. We'll be in touch.</p>
-            </div>
         </div>
     </section>
 
@@ -1024,7 +1010,7 @@
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                     <p class="text-2xl font-extrabold font-heading tracking-tight text-white">Trade<span class="text-amber">Ahead</span></p>
-                    <p class="text-sm text-gray-400 mt-1.5">Built by Jumpmade</p>
+                    <p class="text-sm text-gray-400 mt-1.5">Built in the UK for UK tradespeople</p>
                 </div>
                 <div class="flex items-center gap-6 text-sm text-gray-400">
                     <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
@@ -1181,19 +1167,6 @@
         document.getElementById('mobile-menu').classList.toggle('hidden');
     }
 
-    // Newsletter form
-    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        var form = e.target;
-        var name = form.querySelector('[name="name"]').value;
-        var email = form.querySelector('[name="email"]').value;
-        fetch('https://services.leadconnectorhq.com/hooks/JvAapK9OeuY8uvFELi82/webhook/newsletter', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: name, email: email, tags: ['newsletter'] })
-        }).catch(function() {});
-        form.style.display = 'none';
-        document.getElementById('newsletter-success').classList.remove('hidden');
-    });
 
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -1203,5 +1176,10 @@
         });
     });
     </script>
+
+    <!-- Floating WhatsApp button -->
+    <a href="https://wa.me/447443649259" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all" aria-label="Chat on WhatsApp">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 </body>
 </html>
